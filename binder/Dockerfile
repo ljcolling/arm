@@ -51,4 +51,5 @@ CMD jupyter notebook --ip 0.0.0.0
 USER root
 COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
+RUN chown -R ${NB_USER} /usr/local/lib/R/
 USER ${NB_USER}
