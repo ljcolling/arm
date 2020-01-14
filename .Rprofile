@@ -1,3 +1,4 @@
+Sys.setenv(R_LIBS_USER = "/home/rstudio/.rpackages")
 setHook("rstudio.sessionInit", function(newSession) {
    if (newSession){
      if( is.null(rstudioapi::getActiveProject()) ){

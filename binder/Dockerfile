@@ -49,7 +49,8 @@ CMD jupyter notebook --ip 0.0.0.0
 
 # Copy repo into ${HOME}, make user own $HOME
 USER root
-COPY . ${HOME}
+COPY .Rprofile ${HOME}/.Rprofile
+
 RUN chown -R ${NB_USER} ${HOME}
 #RUN chown -R ${NB_USER} /usr/local/lib/R/site-library
 USER ${NB_USER}
