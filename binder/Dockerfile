@@ -1,8 +1,6 @@
 FROM lcolling/arm:latest
 
-# Installing R Packages here
-RUN install2.r --skipinstalled --error --d TRUE --ncpus -1 \
-	here \
+
 
 
 
@@ -50,6 +48,10 @@ RUN R --quiet -e "devtools::install_github('IRkernel/IRkernel')" && \
 
 
 CMD jupyter notebook --ip 0.0.0.0
+
+# Installing R Packages here
+RUN install2.r --skipinstalled --error --d TRUE --ncpus -1 \
+	here \
 
 
 
