@@ -23,6 +23,6 @@ make build
 make push
 ```
 
-To update **binder** specific details then update the file [`Dockerfile`](binder/Dockerfile).
+To update **binder** specific details then update the file [`Dockerfile`](binder/Dockerfile). You can also include packages to install in `Dockerfile`, which will yield shorter build times, but will prevent you from being able to use the enviroment in **Docker**
 
 Any changes made to [`Dockerfile`](binder/Dockerfile) need to be pushed back to **GitHub**.

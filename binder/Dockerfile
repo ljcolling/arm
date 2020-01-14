@@ -1,5 +1,11 @@
 FROM lcolling/arm:latest
 
+# Installing R Packages here
+RUN install2.r --skipinstalled --error --d TRUE --ncpus -1 \
+	here \
+
+
+
 ENV NB_USER rstudio
 ENV NB_UID 1000
 ENV VENV_DIR /srv/venv
