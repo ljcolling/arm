@@ -24,7 +24,7 @@ binder : .pushed
 
 
 run :
-	docker run --rm -e PASSWORD=password -p 8787:8787 $REPO
+	docker run --rm -e PASSWORD=password -p 8787:8787 $(REPO)
 
 clean :
 	rm .built
