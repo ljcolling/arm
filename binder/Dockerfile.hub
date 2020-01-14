@@ -30,3 +30,4 @@ RUN ["r", "install_stan.R"]
 # Installing the rest
 RUN install2.r --skipinstalled --error --d TRUE --ncpus -1 \
 	brms \
+  here
