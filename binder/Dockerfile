@@ -1,6 +1,6 @@
 FROM lcolling/arm:latest
 
-ENV NB_USER rstudio
+ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV VENV_DIR /srv/venv
 
@@ -41,7 +41,7 @@ RUN jupyter serverextension enable nbgitpuller --sys-prefix
 RUN R --quiet -e "devtools::install_github('IRkernel/IRkernel')" && \
     R --quiet -e "IRkernel::installspec(prefix='${VENV_DIR}')"
 
-RUN rm -rf home/Rstudio/kitematic
+RUN rm -rf ${HOME}/kitematic/
 
 CMD jupyter notebook --ip 0.0.0.0
 

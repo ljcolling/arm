@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ljcolling/arm/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ljcolling/arm/master?urlpath=rstudio)
 
 # About
 
@@ -9,6 +9,8 @@ The binder environment of the Advanced Research Methods Bayesian Methods module.
 The environment contains **RStan** and a number of additional packages.
 
 **nbgitpuller** is also installed in the **Binder** environment so that it can be linked to **R Projects** hosted on **GitHub**. The [.Rprofile](.Rprofile) file contains code to automatically load the **project file** from the linked **GitHub** repository.
+
+To link with a **R Project** hosted on **GitHub**, check out the **R Package** [`containertools`](https://github.com/ljcolling/containertools).
 
 To find a list of the installed packages check [`Dockerfile.hub`](binder/Dockerfile.hub)
 
@@ -23,4 +25,4 @@ make push
 
 To update **binder** specific details then update the file [`Dockerfile`](binder/Dockerfile).
 
-Any changes made to [`Dockerfile`](binder/Dockerfile) need to be pushed back to **GitHub**
+Any changes made to [`Dockerfile`](binder/Dockerfile) need to be pushed back to **GitHub**.
