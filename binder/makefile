@@ -1,5 +1,5 @@
 NOW := $(shell  date '+%F_%H:%M:%S' )
-REPO := 'lcolling/arm'
+REPO := 'lcolling/arm:1.0.0'
 
 build: Dockerfile.hub
 	echo build
