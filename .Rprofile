@@ -7,7 +7,7 @@ setHook("rstudio.sessionInit", function(newSession) {
                                       recursive = T,
                                       ignore.case = T,
                                       full.names = T,
-                                      path = "/home/jovyan"))
+                                      path = "/home/rstudio"))
        # Open that project!
        rstudioapi::openProject(aProject[1])
    }

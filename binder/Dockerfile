@@ -41,7 +41,7 @@ RUN jupyter serverextension enable nbgitpuller --sys-prefix
 RUN R --quiet -e "devtools::install_github('IRkernel/IRkernel')" && \
     R --quiet -e "IRkernel::installspec(prefix='${VENV_DIR}')"
 
-RUN rm -rf ~/home/kitematic
+RUN rm -rf home/Rstudio/kitematic
 
 CMD jupyter notebook --ip 0.0.0.0
 
