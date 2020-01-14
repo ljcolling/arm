@@ -1,4 +1,4 @@
-FROM rocker/verse:3.6.1
+FROM rocker/tidyverse:3.6.2
 LABEL maintainer="lincoln@colling.net.nz"  \
 org.label-schema.vcs-url="https://github.com/ljcolling/arm-binder"
 
@@ -30,4 +30,3 @@ RUN ["r", "install_stan.R"]
 # Installing the rest
 RUN install2.r --skipinstalled --error --d TRUE --ncpus -1 \
 	brms \
-	tidyverse
