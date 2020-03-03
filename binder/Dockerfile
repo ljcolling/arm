@@ -1,4 +1,4 @@
-FROM lcolling/arm:1.0.0
+FROM lcolling/arm:1.0.3
 
 
 ENV NB_USER rstudio

@@ -1,5 +1,5 @@
 NOW := $(shell  date '+%F_%H:%M:%S' )
-REPO := 'lcolling/arm:1.0.0'
+REPO := 'lcolling/arm:1.0.3'
 
 build: Dockerfile.hub
 	echo build
@@ -24,7 +24,7 @@ binder : .pushed
 
 
 run :
-	docker run --rm -e PASSWORD=password -p 8787:8787 $(REPO)
+	docker run --rm -v `pwd`:/home/rstudio/ -e PASSWORD=password -p 8787:8787 $(REPO)
 
 clean :
 	rm .built
