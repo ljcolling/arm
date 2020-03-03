@@ -1,0 +1,12 @@
+binder/.rstudio
+binder/.cache
+binder/.DS_Store
+.DS_Store
+.Rhistory
+binder/.pushed
+binder/.built
+binder/.DS_Store
+binder/.Rhistory
+binder/.bash_history
+binder/.cache/
+binder/.rstudio/
