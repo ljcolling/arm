@@ -1,3 +1,3 @@
 rm .built
 make build
-./makebinder
+./makebinder.sh
