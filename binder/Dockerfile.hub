@@ -95,7 +95,7 @@ patchwork
 
 
 
-COPY bayesplay_0.0.1.tar.gz bayesplay_0.0.1.tar.gz
-RUN R CMD INSTALL bayesplay_0.0.1.tar.gz
-
 RUN R -e 'install.packages("kableExtra")'
+RUN R -e 'install.packages("invgamma")'
+RUN R -e 'install.packages("metRology")'
+RUN R -e 'devtools::install_github("ljcolling/bayesplay")'
