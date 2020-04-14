@@ -55,5 +55,5 @@ USER root
 COPY .Rprofile ${HOME}/.Rprofile
 
 RUN chown -R ${NB_USER} ${HOME}
-#RUN chown -R ${NB_USER} /usr/local/lib/R/site-library
+RUN chown -R ${NB_USER} /usr/local/lib/R/site-library
 USER ${NB_USER}

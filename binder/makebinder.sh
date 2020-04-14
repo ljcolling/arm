@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -f Dockerfile -t ljcolling/mybinder .
+docker build -f Dockerfile.binderlocal -t ljcolling/mybinder .
